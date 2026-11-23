@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEURON — Privacy Policy</title>
+<meta name="description" content="How NEURON handles personal data on its website, when you contact us, and in its software and applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f8fa; --surface:#ffffff; --ink:#0f1b2d; --muted:#55627a; --line:#e3e7ee;
+  --accent:#1a5fd0; --accent-soft:#e8f0fd; --deep:#0b1626;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b1220; --surface:#111a2b; --ink:#e8edf5; --muted:#9aa7bd; --line:#1f2a3f;
+    --accent:#5b9bff; --accent-soft:#16233b; --deep:#060c17;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b1220; --surface:#111a2b; --ink:#e8edf5; --muted:#9aa7bd; --line:#1f2a3f;
+  --accent:#5b9bff; --accent-soft:#16233b; --deep:#060c17;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans","IBM Plex Sans Arabic",system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+html[lang="ar"] body{font-family:"IBM Plex Sans Arabic","IBM Plex Sans",system-ui,sans-serif;line-height:1.85}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+@media (max-width:600px){.wrap{padding:0 16px}}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;letter-spacing:.14em;font-size:18px}
+.brand svg{width:30px;height:30px;flex:none}
+nav{display:flex;align-items:center;gap:22px;font-size:15px}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.lang{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer}
+.lang:hover{border-color:var(--accent)}
+@media (max-width:640px){nav a{display:none}}
+
+/* hero */
+.hero{padding:96px 0 80px;position:relative;overflow:hidden}
+.hero .eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:6px 12px;border-radius:999px;margin-bottom:24px}
+html[lang="ar"] .hero .eyebrow{letter-spacing:0;text-transform:none}
+.hero h1{font-size:clamp(34px,5.4vw,58px);line-height:1.1;font-weight:700;max-width:15ch;letter-spacing:-.02em}
+html[lang="ar"] .hero h1{line-height:1.35;letter-spacing:0;max-width:18ch}
+.hero p.lead{margin-top:22px;font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:56ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:15px;padding:12px 22px;border-radius:10px;border:1px solid transparent}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn.ghost{border-color:var(--line);background:var(--surface)}
+.btn.ghost:hover{border-color:var(--accent)}
+.net{position:absolute;inset-inline-end:-80px;top:40px;width:520px;max-width:70vw;opacity:.9;pointer-events:none}
+@media (max-width:900px){.net{opacity:.18;inset-inline-end:-160px}}
+html[dir="rtl"] .net{transform:scaleX(-1)}
+
+/* sections */
+section{padding:80px 0;border-top:1px solid var(--line)}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+html[lang="ar"] .kicker{letter-spacing:0;text-transform:none}
+h2{font-size:clamp(26px,3.4vw,36px);line-height:1.2;font-weight:700;letter-spacing:-.01em;max-width:24ch}
+html[lang="ar"] h2{line-height:1.45;letter-spacing:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.about-grid p{font-size:18px;color:var(--muted)}
+.about-grid p + p{margin-top:16px}
+@media (max-width:800px){.about-grid{grid-template-columns:1fr;gap:24px}}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+@media (max-width:860px){.cards{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px}
+.card .ico{width:44px;height:44px;border-radius:12px;background:var(--accent-soft);display:grid;place-items:center;margin-bottom:20px}
+.card .ico svg{width:22px;height:22px;stroke:var(--accent);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:19px;font-weight:600;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15.5px}
+
+.origin{background:var(--deep);color:#e8edf5;border-radius:20px;padding:48px;display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;margin-top:8px}
+.origin .num{font-size:15px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#8fb6ff}
+html[lang="ar"] .origin .num{letter-spacing:0}
+.origin p{font-size:18px;color:#c9d3e3;max-width:60ch}
+.origin strong{color:#fff}
+@media (max-width:700px){.origin{grid-template-columns:1fr;padding:32px 24px;gap:12px}}
+
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+.contact-grid .card a{text-decoration:none;color:var(--accent);font-weight:500;word-break:break-word}
+.contact-grid .label{font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
+html[lang="ar"] .contact-grid .label{letter-spacing:0;text-transform:none}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+
+footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:14px}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+[data-ar]{display:none}
+html[lang="ar"] [data-en]{display:none}
+html[lang="ar"] [data-ar]{display:revert}
+
+.doc{max-width:760px;padding-top:64px;padding-bottom:80px}
+.doc h1{font-size:clamp(30px,4.4vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.01em}
+html[lang="ar"] .doc h1{line-height:1.4;letter-spacing:0}
+.doc .updated{color:var(--muted);margin-top:10px;font-size:15px}
+.doc h2{font-size:21px;margin:40px 0 10px;max-width:none}
+.doc p,.doc li{color:var(--muted);font-size:16.5px}
+.doc ul{padding-inline-start:22px;margin-top:8px}
+.doc li+li{margin-top:6px}
+.doc a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="NEURON">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="5" fill="var(--accent)"/>
+        <g stroke="var(--accent)" stroke-width="2" stroke-linecap="round" fill="none">
+          <path d="M16 11V4M16 21v7M11.7 13.5 5.5 10M20.3 18.5l6.2 3.5M11.7 18.5 5.5 22M20.3 13.5 26.5 10"/>
+        </g>
+        <g fill="var(--accent)"><circle cx="16" cy="3.5" r="2"/><circle cx="16" cy="28.5" r="2"/><circle cx="5" cy="9.7" r="2"/><circle cx="27" cy="22.3" r="2"/><circle cx="5" cy="22.3" r="2"/><circle cx="27" cy="9.7" r="2"/></g>
+      </svg>
+      <span>NEURON</span>
+    </a>
+    <nav>
+      <a href="index.html#about"><span data-en>About</span><span data-ar>عن الشركة</span></a>
+      <a href="index.html#work"><span data-en>What we build</span><span data-ar>ماذا نبني</span></a>
+      <a href="index.html#contact"><span data-en>Contact</span><span data-ar>تواصل معنا</span></a>
+      <button class="lang" id="langBtn" type="button">العربية</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap doc">
+<h1><span data-en>Privacy Policy</span><span data-ar>سياسة الخصوصية</span></h1>
+<p class="updated"><span data-en>Last updated: 23 November 2026</span><span data-ar>آخر تحديث: ٢٣ نوفمبر ٢٠٢٦</span></p>
+<h2><span data-en>Who we are</span><span data-ar>من نحن</span></h2>
+<div data-en><p>NEURON (Neuron for Software &amp; Artificial Intelligence) is an Egyptian company that builds software and AI systems for healthcare institutions. This policy explains what information we handle through this website, when you contact us, and through our software and applications.</p></div><div data-ar><p>نيوروون للبرمجيات والذكاء الاصطناعي شركة مصرية تبني برمجيات وأنظمة ذكاء اصطناعي للمؤسسات الصحية. توضح هذه السياسة المعلومات التي نتعامل معها من خلال هذا الموقع، وعند تواصلك معنا، ومن خلال برمجياتنا وتطبيقاتنا.</p></div>
+<h2><span data-en>This website</span><span data-ar>هذا الموقع</span></h2>
+<div data-en><ul><li>The website has no forms, accounts, advertising or analytics, and it does not set tracking cookies.</li><li>It saves only your language choice (English or Arabic) in your own browser. That choice never leaves your device.</li><li>The site is hosted on GitHub Pages. Like any web host, GitHub may record technical data such as your IP address for security and to keep the service running. See GitHub's privacy statement for details.</li></ul></div><div data-ar><ul><li>لا يحتوي الموقع على نماذج أو حسابات أو إعلانات أو أدوات تحليل، ولا يستخدم ملفات تعريف ارتباط للتتبع.</li><li>يحفظ الموقع اختيارك للغة فقط (العربية أو الإنجليزية) داخل متصفحك، ولا يغادر هذا الاختيار جهازك.</li><li>الموقع مستضاف على GitHub Pages، وقد تسجل GitHub بيانات تقنية مثل عنوان IP لأغراض الأمان وتشغيل الخدمة، وفقًا لبيان الخصوصية الخاص بها.</li></ul></div>
+<h2><span data-en>When you contact us</span><span data-ar>عند تواصلك معنا</span></h2>
+<div data-en><p>If you email or call us, we use your name, contact details and message only to reply and to follow up on your request. We do not add you to marketing lists without your consent.</p></div><div data-ar><p>عند مراسلتنا بالبريد الإلكتروني أو الاتصال بنا، نستخدم اسمك وبيانات التواصل ورسالتك فقط للرد عليك ومتابعة طلبك، ولا نضيفك إلى أي قوائم تسويقية دون موافقتك.</p></div>
+<h2><span data-en>Our software and applications</span><span data-ar>برمجياتنا وتطبيقاتنا</span></h2>
+<div data-en><ul><li>Our systems are provided to healthcare institutions, which decide what data is entered and remain responsible for their patients' data.</li><li>Our systems run either on the institution's own servers or on servers we host for the institution inside Egypt. When we host a system, we process its data only on the institution's instructions and under a written agreement with it, keep each institution's data separate, and do not use it for any other purpose. When the system runs on the institution's servers, we access its data only when the institution asks us to, for support, and only as far as needed.</li><li>Each mobile application describes the data it uses in its store listing and in the app. Where an app's practices differ from this policy, the app's notice applies.</li><li>We handle personal data in line with Egypt's Personal Data Protection Law (No. 151 of 2020) and applicable health regulations.</li></ul></div><div data-ar><ul><li>تُقدَّم أنظمتنا للمؤسسات الصحية، وهي التي تحدد البيانات التي تُدخَل وتظل مسؤولة عن بيانات مرضاها.</li><li>تعمل أنظمتنا إما على خوادم المؤسسة نفسها أو على خوادم نستضيفها نحن لصالح المؤسسة داخل مصر. وعند الاستضافة لدينا، نعالج البيانات وفق تعليمات المؤسسة فقط وبموجب اتفاق مكتوب معها، ونفصل بيانات كل مؤسسة عن غيرها، ولا نستخدمها لأي غرض آخر. وعندما يعمل النظام على خوادم المؤسسة، لا نطّلع على بياناتها إلا بطلب منها لأغراض الدعم وبالقدر اللازم فقط.</li><li>يوضح كل تطبيق للهاتف المحمول البيانات التي يستخدمها في صفحته على المتجر وداخل التطبيق، وإذا اختلفت ممارسات التطبيق عن هذه السياسة يُعمل بإشعار التطبيق.</li><li>نتعامل مع البيانات الشخصية وفقًا لقانون حماية البيانات الشخصية المصري رقم 151 لسنة 2020 واللوائح الصحية المعمول بها.</li></ul></div>
+<h2><span data-en>Sharing</span><span data-ar>مشاركة البيانات</span></h2>
+<div data-en><p>We do not sell personal data. We share it only with service providers who help us operate (such as hosting and email), when the law requires it, or with your consent.</p></div><div data-ar><p>لا نبيع البيانات الشخصية، ولا نشاركها إلا مع مقدمي الخدمات الذين يساعدوننا في التشغيل (مثل الاستضافة والبريد الإلكتروني)، أو عندما يُلزمنا القانون، أو بموافقتك.</p></div>
+<h2><span data-en>Security and retention</span><span data-ar>الأمان ومدة الاحتفاظ</span></h2>
+<div data-en><p>We use reasonable technical and organisational measures to protect information, and we keep it only as long as needed for the purpose it was collected for or as the law requires.</p></div><div data-ar><p>نستخدم إجراءات تقنية وتنظيمية مناسبة لحماية المعلومات، ونحتفظ بها فقط للمدة اللازمة للغرض الذي جُمعت من أجله أو للمدة التي يفرضها القانون.</p></div>
+<h2><span data-en>Your rights</span><span data-ar>حقوقك</span></h2>
+<div data-en><p>You can ask to see, correct or delete personal data we hold about you, or withdraw your consent, by emailing <a class="ltr" href="mailto:info@neuronaicompany.com">info@neuronaicompany.com</a>. If your data is held by a healthcare institution that uses our systems, please contact that institution first; we will help it respond.</p></div><div data-ar><p>يمكنك طلب الاطلاع على بياناتك الشخصية التي لدينا أو تصحيحها أو حذفها، أو سحب موافقتك، بمراسلتنا على <a class="ltr" href="mailto:info@neuronaicompany.com">info@neuronaicompany.com</a>. وإذا كانت بياناتك لدى مؤسسة صحية تستخدم أنظمتنا، فيُرجى التواصل مع المؤسسة أولًا، وسنساعدها في الرد عليك.</p></div>
+<h2><span data-en>Children</span><span data-ar>الأطفال</span></h2>
+<div data-en><p>This website is not directed to children, and we do not knowingly collect children's personal data through it.</p></div><div data-ar><p>هذا الموقع غير موجَّه للأطفال، ولا نجمع من خلاله بيانات شخصية للأطفال عن علم.</p></div>
+<h2><span data-en>Changes and contact</span><span data-ar>التعديلات والتواصل</span></h2>
+<div data-en><p>We may update this policy and will change the date at the top when we do. Questions: <a class="ltr" href="mailto:info@neuronaicompany.com">info@neuronaicompany.com</a> · <span class="ltr">+20 111 140 7654</span> · 208 Plus Mall, South Investors Area, Fifth Settlement, New Cairo, Cairo, Egypt.</p></div><div data-ar><p>قد نحدّث هذه السياسة، وعندها نغيّر التاريخ المذكور أعلاه. للاستفسارات: <a class="ltr" href="mailto:info@neuronaicompany.com">info@neuronaicompany.com</a> · <span class="ltr">+20 111 140 7654</span> · ٢٠٨ بلس مول – المستثمرين الجنوبية – التجمع الخامس – القاهرة الجديدة – مصر.</p></div>
+</main>
+<footer>
+  <div class="wrap row">
+    <span>© <span id="yr">2026</span> NEURON · <span data-en>Neuron for Software &amp; Artificial Intelligence</span><span data-ar>نيوروون للبرمجيات والذكاء الاصطناعي</span></span>
+    <span><a href="privacy.html"><span data-en>Privacy Policy</span><span data-ar>سياسة الخصوصية</span></a> · <span class="ltr">neuronaicompany.com</span></span>
+  </div>
+</footer>
+<script>
+(function(){
+  var html=document.documentElement, btn=document.getElementById('langBtn');
+  function set(l){
+    html.lang=l; html.dir=(l==='ar')?'rtl':'ltr';
+    btn.textContent=(l==='ar')?'English':'العربية';
+    document.title=(l==='ar')?'نيوروون — سياسة الخصوصية':'NEURON — Privacy Policy';
+    try{localStorage.setItem('neuron-lang',l)}catch(e){}
+  }
+  var saved=null; try{saved=localStorage.getItem('neuron-lang')}catch(e){}
+  if(saved==='ar'||saved==='en') set(saved);
+  btn.addEventListener('click',function(){set(html.lang==='ar'?'en':'ar')});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
